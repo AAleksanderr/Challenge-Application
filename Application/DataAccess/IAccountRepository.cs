@@ -1,5 +1,5 @@
 ﻿using System;
-using Application.Domain;
+using Application.DataAccess.Models;
 
 namespace Application.DataAccess
 {

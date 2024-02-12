@@ -1,5 +1,5 @@
 ﻿using Application.DataAccess;
-using Application.Domain;
+using Application.DataAccess.Models;
 using Moq;
 using System;
 

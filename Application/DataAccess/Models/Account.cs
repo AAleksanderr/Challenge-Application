@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Application.Domain
+namespace Application.DataAccess.Models
 {
     public class Account
     {

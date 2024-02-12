@@ -1,4 +1,4 @@
-using Application.Domain;
+using Application.DataAccess.Models;
 using Application.Domain.Services;
 using Application.Features;
 using Moq;
@@ -7,7 +7,7 @@ using Xunit;
 
 namespace Application.Tests
 {
-	public class TransferMoneyTests
+    public class TransferMoneyTests
 	{
 		[Fact]
 		public void ExecuteTest()
@@ -68,7 +68,7 @@ namespace Application.Tests
 			Assert.Equal("The amount cannot be zero or negative", ex.Message);
 
 			ex = Assert.Throws<InvalidOperationException>(tooBigAmountTransfer);
-			Assert.Equal("Insufficient funds to make transfer", ex.Message);
+			Assert.Equal("Insufficient funds to make withdraw", ex.Message);
 
 			ex = Assert.Throws<InvalidOperationException>(moreThenPayInLimitTransfer);
 			Assert.Equal("Account pay in limit reached", ex.Message);
